@@ -1,0 +1,67 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<head>
+    <!-- Заголовок страницы в браузере -->
+    <title>FLEXBOX</title>
+    <!-- Адаптив -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8">
+</head>
+<!-- Отображаемое тело страницы -->
+<body>
+<div class="wrapper">
+    <div class="container">
+        <form>
+            <nav class="nav-bar">
+                <div class="nav-bar__input-form">
+                    <input placeholder="Введите имя..." class="input-form__input" type="text">
+                </div>
+                <div class="nav-bar__find-button">
+                    <button type="submit" class="find-button__search button">Найти</button>
+                </div>
+                <div class="nav-bar__clear-button">
+                    <button type="reset" class="clear-button__clear button">Очистить</button>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://picsum.photos/200" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__title">NTCN</div>
+                        <div class="card__description">TEST</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://picsum.photos/200" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__title">NTCN</div>
+                        <div class="card__description">TEST</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://picsum.photos/200" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div class="card__title">NTCN</div>
+                        <div class="card__description">TEST</div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
