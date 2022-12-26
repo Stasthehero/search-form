@@ -3,7 +3,9 @@ const cardsField = document.querySelector('.content');
 const persons = [
     {name: 'Александр Бородулин', salary: '500 тыс.рублей'},
     {name: 'Даня Ценев', salary: '500 тыс.рублей'},
-    {name: 'Татьяна Зобова', salary: '250 тыс.рублей'}
+    {name: 'Татьяна Зобова', salary: '250 тыс.рублей'},
+    {name: 'Даня Ценев', salary: '500 тыс.рублей'}
+
 ];
 
 
@@ -33,21 +35,22 @@ let init = function () {
                     cardsField.innerHTML = '';
                     const filteredPerson = persons.filter((person) => {
                         return person.name === inputForm;
-                                                // cardsField.insertAdjacentHTML(
-                        //     'afterbegin',
-                        //     '<div class="card">\n' +
-                        //     '                    <div class="card__img">\n' +
-                        //     '                        <img src="https://picsum.photos/200" alt="">\n' +
-                        //     '                    </div>\n' +
-                        //     '                    <div class="card__info">\n' +
-                        //     '                        <div class="card__title">' + person.name + '</div>\n' +
-                        //     '                        <div class="card__description">' + person.salary + '</div>\n' +
-                        //     '                    </div>\n' +
-                        //     '                </div>'
-                        // )
-                    })
-                }
-                                else {
+                    });
+                    // console.log(filteredPerson);
+                    // cardsField.insertAdjacentHTML(
+                    //     'afterbegin',
+                    //     '<div class="card">\n' +
+                    //     '                    <div class="card__img">\n' +
+                    //     '                        <img src="https://picsum.photos/200" alt="">\n' +
+                    //     '                    </div>\n' +
+                    //     '                    <div class="card__info">\n' +
+                    //     '                        <div class="card__title">' + filteredPerson[0].name + '</div>\n' +
+                    //     '                        <div class="card__description">' + filteredPerson[0].salary + '</div>\n' +
+                    //     '                    </div>\n' +
+                    //     '                </div>'
+                    // );
+                    //
+                } else {
                 }
 
             }
