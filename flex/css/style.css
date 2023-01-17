@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 .wrapper {
-    max-width: 843px;
+    max-width: 1000px;
     margin: 0 auto;
     font-family:'Inter', sans-serif;
     border-radius: 10px;
@@ -132,6 +132,14 @@ h1, h2, h3, h4, h5, h6 {
 .clear-button__clear:hover {
     background-color: gray;
 }
+
+.add-button__add:hover {
+    background-color: gray;
+}
+.add-button__add {
+    background-color: lightgrey;
+}
+
 .button {
     padding: 10px 20px;
     font-size: 15px;
@@ -211,4 +219,85 @@ h1, h2, h3, h4, h5, h6 {
 
 .not-found-image {
     height: 148px;
+}
+
+.content {
+}
+
+
+
+.modal-content {
+margin: 0 auto;
+    display:none;
+   flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    position: fixed;
+    background-color:#D6ECBA ;
+    left: 35%;
+    top: 20%;
+    z-index: 1;
+
+
+}
+
+.close {
+    font-size: 28px;
+    max-width: 16px;
+    margin-left: inherit;
+
+}
+.close:hover {
+    cursor: pointer;
+}
+
+.modal__name {
+
+}
+
+.input-name {
+}
+
+.modal__salary {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.input-salary {
+}
+
+.modal__buttons {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 20px;
+
+}
+
+.modal__new-card-button {
+}
+
+.modal__name-description {
+    margin-bottom: 20px;
+}
+
+.modal__salary-description {
+    margin-bottom: 20px;
+
+}
+
+.button {
+}
+
+.description {
+    font-family: 'Inter',sans-serif;
+
+}
+
+.input {
+    width: 300px;
+    height: 34px;
+    border: 1px solid #D6ECBA;
+    padding-left: 20px;
+    font-size: 18px;
 }
