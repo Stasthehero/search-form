@@ -17,51 +17,41 @@
 <body>
 <div class="wrapper">
     <div class="container">
-        <form>
-            <nav class="nav-bar">
-                <div class="nav-bar__input-form">
-                    <input placeholder="Введите имя..." class="input-form__input" type="text">
+
+        <nav class="nav-bar">
+            <div class="nav-bar__input-form">
+                <input placeholder="Введите имя..." class="input-form__input" id="input-form" type="text">
+            </div>
+            <div class="nav-bar__find-button">
+                <button name="find-button" type="button" class="find-button__search button">Найти</button>
+            </div>
+            <div class="nav-bar__clear-button">
+                <button name="clear-button" class="clear-button__clear button">Очистить</button>
+            </div>
+            <div class="nav-bar__add">
+                <button name="add-button" class="add-button__add button">Добавить</button>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal__name">
+                    <p class="modal__name-description description">Имя</p>
+                    <input type="text" class="input-name input">
                 </div>
-                <div class="nav-bar__find-button">
-                    <button type="submit" class="find-button__search button">Найти</button>
+                <div class="modal__salary">
+                    <p class="modal__salary-description description">Зарплата</p>
+                    <input type="text" class="input-salary input">
                 </div>
-                <div class="nav-bar__clear-button">
-                    <button type="reset" class="clear-button__clear button">Очистить</button>
-                </div>
-            </nav>
-            <div class="content">
-                <div class="card">
-                    <div class="card__img">
-                        <img src="https://picsum.photos/200" alt="">
-                    </div>
-                    <div class="card__info">
-                        <div class="card__title">NTCN</div>
-                        <div class="card__description">TEST</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__img">
-                        <img src="https://picsum.photos/200" alt="">
-                    </div>
-                    <div class="card__info">
-                        <div class="card__title">NTCN</div>
-                        <div class="card__description">TEST</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card__img">
-                        <img src="https://picsum.photos/200" alt="">
-                    </div>
-                    <div class="card__info">
-                        <div class="card__title">NTCN</div>
-                        <div class="card__description">TEST</div>
-                    </div>
+                <div class="modal__buttons">
+                    <button name="modal-new-card-button" class="modal__new-card-button button">Добавить карту</button>
+                    <button name="close-modal-button" class="modal__close-modal-button button">Закрыть</button>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
 </div>
-
+<script src="js/utils.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
